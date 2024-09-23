@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatorio de trasações</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Relatório de Trasanções</h1>
+        <div class="filter mb-4">
+            <label for="type-filter">Filtrar por:</label>
+            <select id="type-filter" class="form-control">
+                <option value="all">Todos</option>
+                <option value="IN">Entrada</option>
+                <option value="OUT">Saída</option>
+            </select>
+        </div>
+        <table class="table table-striped" id="data-table">
+            <thead>
+                <tr>
+                    <th class="col-blue">Data</th>
+                    <th class="col-blue">Cliente</th>
+                    <th class="col-blue">Telefone Cliente</th>
+                    <th class="col-blue">Loja</th>
+                    <th class="col-blue">Telefone da Loja</th>
+                    <th class="col-blue">Tipo</th>
+                    <th class="col-blue">Quantidade</th>
+                    <th class="col-blue">Preço Unitário</th>
+                    <th class="col-blue">Preço total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados JS -->
+            </tbody>
+        </table>
+        <div class="totals text-right">
+            <div id="total-entries" class="total-item">Total de Entradas: <span>R$ 0,00</span></span></div>
+            <div id="total-exits" class="total-item">Total de Saídas: <span>R$ 0,00</span></span></div>
+            <div id="total-balance" class="total-item">Saldo Total: <span>R$ 0,00</span></span></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
